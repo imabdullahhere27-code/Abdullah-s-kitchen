@@ -1,298 +1,701 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah's Kitchen</title>
+
+    <title>Abdullah's Kitchen | Restaurant in Faisalabad</title>
+
+    <meta name="description" content="Abdullah's Kitchen in Faisalabad — delicious food, fresh ingredients, popular dishes and easy table reservations.">
+     <meta name="keywords" content="Abdullah's Kitchen, restaurant in Faisalabad, food in Faisalabad, Pakistani food, restaurant Faisalabad">
+<meta name="author" content="Abdullah's Kitchen">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <nav>
-    <div class="logo">
-    <img src="logo.jpg" alt="Abdullah's Kitchen">
-    <h2>Abdullah's Kitchen</h2>
-</div>
 
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    <!-- NAVBAR -->
 
-    <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <img src="logo.jpg" alt="Abdullah's Kitchen Logo">
+            <span>Abdullah's Kitchen</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
 
     <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
         <div class="hero-content">
-            <p class="welcome">WELCOME TO</p>
 
-            <h1>Abdullah's Kitchen</h1>
-
-            <p class="tagline">
-                Delicious food, unforgettable taste.
+            <p class="eyebrow">
+                WELCOME TO
             </p>
 
-            <a href="#menu" class="hero-button">Explore Our Menu</a>
-        </div>
-    </section>
+            <h1>
+                Abdullah's
+                <span>Kitchen</span>
+            </h1>
 
-    <section class="menu" id="menu">
+            <p class="hero-text">
+                Fresh ingredients, delicious flavors and unforgettable
+                moments — all served under one roof.
+            </p>
 
-        <div class="section-title reveal">
-            <p>OUR MENU</p>
-            <h2>Popular Dishes</h2>
-        </div>
-        <div class="menu-filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="starters">Starters</button>
-    <button class="filter-btn" data-filter="mains">Mains</button>
-    <button class="filter-btn" data-filter="drinks">Drinks</button>
-</div>
+            <div class="hero-buttons">
 
-        <div class="menu-container">
+                <a href="#menu" class="btn btn-primary">
+                    Explore Menu
+                </a>
 
-            <div class="menu-card reveal" data-category="mains">
-                <div class="menu-image burger"></div>
-                <div class="menu-info">
-                    <h3>Classic Burger</h3>
-                    <p>Juicy beef patty with fresh vegetables and special sauce.</p>
-                    <span>Rs. 650</span>
-                </div>
+                <a href="#contact" class="btn btn-outline">
+                    Reserve a Table
+                </a>
+
             </div>
 
-            <div class="menu-card reveal" data-category="mains">
-                <div class="menu-image pizza"></div>
-                <div class="menu-info">
-                    <h3>Special Pizza</h3>
-                    <p>Freshly baked pizza loaded with cheese and delicious toppings.</p>
-                    <span>Rs. 1200</span>
-                </div>
-            </div>
-
-            <div class="menu-card reveal" data-category="mains">
-                <div class="menu-image biryani"></div>
-                <div class="menu-info">
-                    <h3>Chicken Biryani</h3>
-                    <p>Traditional aromatic biryani served with raita and salad.</p>
-                    <span>Rs. 450</span>
-                </div>
-            </div>
-<div class="menu-card reveal" data-category="starters">
-    <div class="menu-image springrolls"></div>
-    <div class="menu-info">
-        <h3>Spring Rolls</h3>
-        <p>Crispy rolls stuffed with fresh vegetables, served with sweet chili sauce.</p>
-        <span>Rs. 350</span>
-    </div>
-</div>
-
-<div class="menu-card reveal" data-category="starters">
-    <div class="menu-image wings"></div>
-    <div class="menu-info">
-        <h3>Chicken Wings</h3>
-        <p>Spicy grilled wings marinated in special house sauce.</p>
-        <span>Rs. 500</span>
-    </div>
-</div>
-
-<div class="menu-card reveal" data-category="drinks">
-    <div class="menu-image lemonade"></div>
-    <div class="menu-info">
-        <h3>Fresh Lemonade</h3>
-        <p>Chilled homemade lemonade with a hint of mint.</p>
-        <span>Rs. 200</span>
-    </div>
-</div>
-
-<div class="menu-card reveal" data-category="drinks">
-    <div class="menu-image icedcoffee"></div>
-    <div class="menu-info">
-        <h3>Iced Coffee</h3>
-        <p>Rich cold coffee topped with cream and chocolate drizzle.</p>
-        <span>Rs. 300</span>
-    </div>
-</div>
         </div>
+
+        <div class="scroll-indicator">
+            SCROLL DOWN
         </div>
 
     </section>
 
-    <section class="about" id="about">
 
-        <div class="about-content reveal">
-            <p class="about-small">ABOUT US</p>
+    <!-- MENU -->
 
-            <h2>Where Great Taste Meets Great Moments</h2>
+    <section class="menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                OUR MENU
+            </p>
+
+            <h2>
+                Something Delicious
+                <span>For Everyone</span>
+            </h2>
 
             <p>
-    At Abdullah's Kitchen, we believe great food brings people together.
-    We prepare fresh and delicious meals using quality ingredients
-    and serve every customer with care.
-</p>
+                Explore some of our most popular dishes.
+            </p>
 
-            <button>Learn More</button>
         </div>
+
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="mains">
+                Mains
+            </button>
+
+            <button class="filter" data-filter="starters">
+                Starters
+            </button>
+
+            <button class="filter" data-filter="drinks">
+                Drinks
+            </button>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+
+            <!-- BURGER -->
+
+            <div class="food-card" data-category="mains">
+
+                <div class="food-image burger">
+
+                    <span>POPULAR</span>
+
+                </div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Classic Burger</h3>
+
+                        <strong>Rs. 650</strong>
+
+                    </div>
+
+                    <p>
+                        Juicy beef patty with fresh vegetables,
+                        cheese and our special house sauce.
+                    </p>
+
+                    <a href="#contact">
+                        Order Now →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PIZZA -->
+
+            <div class="food-card" data-category="mains">
+
+                <div class="food-image pizza">
+
+                    <span>BEST SELLER</span>
+
+                </div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Special Pizza</h3>
+
+                        <strong>Rs. 1,200</strong>
+
+                    </div>
+
+                    <p>
+                        Freshly baked pizza loaded with cheese
+                        and delicious toppings.
+                    </p>
+
+                    <a href="#contact">
+                        Order Now →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- BIRYANI -->
+
+            <div class="food-card" data-category="mains">
+
+                <div class="food-image biryani"></div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Chicken Biryani</h3>
+
+                        <strong>Rs. 450</strong>
+
+                    </div>
+
+                    <p>
+                        Traditional aromatic biryani served
+                        with raita and fresh salad.
+                    </p>
+
+                    <a href="#contact">
+                        Order Now →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- WINGS -->
+
+            <div class="food-card" data-category="starters">
+
+                <div class="food-image wings"></div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Chicken Wings</h3>
+
+                        <strong>Rs. 500</strong>
+
+                    </div>
+
+                    <p>
+                        Crispy and flavorful chicken wings
+                        prepared with our special sauce.
+                    </p>
+
+                    <a href="#contact">
+                        Order Now →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SPRING ROLLS -->
+
+            <div class="food-card" data-category="starters">
+
+                <div class="food-image spring-rolls"></div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Spring Rolls</h3>
+
+                        <strong>Rs. 350</strong>
+
+                    </div>
+
+                    <p>
+                        Crispy rolls filled with fresh vegetables
+                        and served with chili sauce.
+                    </p>
+
+                    <a href="#contact">
+                        Order Now →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- LEMONADE -->
+
+            <div class="food-card" data-category="drinks">
+
+                <div class="food-image lemonade"></div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Fresh Lemonade</h3>
+
+                        <strong>Rs. 200</strong>
+
+                    </div>
+
+                    <p>
+                        Chilled homemade lemonade with fresh
+                        mint and lemon.
+                    </p>
+
+                    <a href="#contact">
+                        Order Now →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about-section" id="about">
 
         <div class="about-image"></div>
 
-    </section>
+        <div class="about-content">
 
-    <section class="contact" id="contact">
+            <p class="eyebrow">
+                ABOUT US
+            </p>
 
-        <div class="contact-title reveal">
-            <p>GET IN TOUCH</p>
-            <h2>Make a Reservation</h2>
-        </div>
+            <h2>
+                More Than Just
+                <span>Food</span>
+            </h2>
 
-        <div class="contact-container reveal">
+            <p>
+                At Abdullah's Kitchen, we believe that great food
+                brings people together. Every dish is prepared
+                using quality ingredients and served with care.
+            </p>
 
-            <div class="contact-info">
-                <h3>Visit Us</h3>
+            <div class="features">
 
-                <p>📍 Faisalabad, Pakistan</p>
-                <p>📞 +92 300 1234567</p>
-                <p>✉️ info@myrestaurant.com</p>
+                <div>
+                    <strong>100%</strong>
+                    <p>Fresh Ingredients</p>
+                </div>
 
-                <h3>Opening Hours</h3>
-                <p>Monday - Sunday: 12:00 PM - 11:00 PM</p>
+                <div>
+                    <strong>10+</strong>
+                    <p>Popular Dishes</p>
+                </div>
+
+                <div>
+                    <strong>5★</strong>
+                    <p>Customer Experience</p>
+                </div>
+
             </div>
 
-            <form class="reservation-form" onsubmit="return bookTable()">
+            <a href="#contact" class="text-link">
+                Visit Us →
+            </a>
 
-                <input type="text" placeholder="Your Name">
+        </div>
 
-                <input type="email" placeholder="Your Email">
+    </section>
 
-                <input type="tel" placeholder="Phone Number">
 
-                <input type="date">
+    <!-- REVIEWS -->
 
-                <input type="time">
+    <section class="reviews-section" id="reviews">
 
-                <textarea placeholder="Special Request"></textarea>
+        <div class="section-heading">
 
-                <button type="submit">Book a Table</button>
+            <p class="eyebrow">
+                CUSTOMER LOVE
+            </p>
+
+            <h2>
+                What People
+                <span>Say</span>
+            </h2>
+
+            <p>
+                A few words from our happy customers.
+            </p>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Amazing food and a really comfortable
+                    atmosphere. Definitely coming back!"
+                </p>
+
+                <strong>
+                    — Ahmed
+                </strong>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "The burger was delicious and the service
+                    was excellent."
+                </p>
+
+                <strong>
+                    — Hamza
+                </strong>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "One of my favorite places for a family
+                    dinner. Highly recommended."
+                </p>
+
+                <strong>
+                    — Ali
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Reserve Your
+                <span>Table</span>
+            </h2>
+
+            <p>
+                Contact us and plan your next delicious meal.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-info">
+
+                <h3>
+                    Visit Us
+                </h3>
+
+                <p>
+                    📍 Faisalabad, Pakistan
+                </p>
+
+                <p>
+                    📞 +92 300 1234567
+                </p>
+
+                <p>
+                    ✉️ info@abdullahskitchen.com
+                </p>
+
+
+                <div class="opening-hours">
+
+                    <h4>
+                        Opening Hours
+                    </h4>
+
+                    <p>
+                        Monday - Sunday
+                    </p>
+
+                    <p>
+                        12:00 PM - 11:00 PM
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/923222379891"
+                    target="_blank"
+                    class="whatsapp-button"
+                >
+                    WhatsApp Us
+                </a>
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                id="reservationForm"
+            >
+
+                <h3>
+                    Make a Reservation
+                </h3>
+
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+
+                <div class="form-row">
+
+                    <input
+                        type="date"
+                        required
+                    >
+
+                    <input
+                        type="time"
+                        required
+                    >
+
+                </div>
+
+
+                <textarea
+                    placeholder="Special Request"
+                ></textarea>
+
+
+                <button type="submit">
+                    Request Reservation
+                </button>
 
             </form>
 
         </div>
-                <div class="map-container">
+
+
+        <!-- MAP -->
+
+        <div class="map">
+
             <iframe
                 src="https://www.google.com/maps?q=Faisalabad,Pakistan&output=embed"
                 width="100%"
-                height="300"
+                height="320"
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy">
             </iframe>
+
         </div>
 
     </section>
 
+
+    <!-- FOOTER -->
+
     <footer>
-        <div class="footer-content">
+
+        <div class="footer-grid">
+
 
             <div>
-                <h2>Abdullah's Kitchen</h2>
-                <p>Delicious food. Great moments.</p>
+
+                <h2>
+                    Abdullah's Kitchen
+                </h2>
+
+                <p>
+                    Delicious food. Great moments.
+                </p>
+
             </div>
 
-            <div>
-                <h3>Quick Links</h3>
-                <p>Home</p>
-                <p>Menu</p>
-                <p>About</p>
-                <p>Contact</p>
-            </div>
 
             <div>
-                <h3>Follow Us</h3>
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>TikTok</p>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#menu">
+                    Menu
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
             </div>
+
+
+            <div>
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
 
         </div>
+
 
         <div class="footer-bottom">
-            <p>© 2026 Abdullah's Kitchen. All Rights Reserved.</p>
+
+            <p>
+                © 2026 Abdullah's Kitchen. All Rights Reserved.
+            </p>
+
         </div>
+
     </footer>
-    <a href="https://wa.me/923222379891" class="whatsapp-float" target="_blank">💬</a>
 
- <script>
-function bookTable() {
-    alert("Thank you! Your reservation request has been received.");
-    return false;
-}
-const revealElements = document.querySelectorAll('.reveal');
 
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-        }
-    });
-}, { threshold: 0.15 });
+    <!-- FLOATING WHATSAPP -->
 
-revealElements.forEach(el => revealObserver.observe(el));
-const filterButtons = document.querySelectorAll('.filter-btn');
-const menuCards = document.querySelectorAll('.menu-card');
+    <a
+        href="https://wa.me/923222379891"
+        target="_blank"
+        class="floating-whatsapp"
+        aria-label="Chat on WhatsApp"
+    >
+        💬
+    </a>
 
-filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        filterButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
 
-        const filter = btn.getAttribute('data-filter');
+    <!-- JAVASCRIPT -->
 
-        menuCards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                card.classList.remove('hidden');
-            } else {
-                card.classList.add('hidden');
-            }
-        });
-    });
-});
-
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
-});
-
-const nav = document.querySelector('nav');
-const sections = document.querySelectorAll('section[id]');
-const navItems = document.querySelectorAll('.nav-links a');
-
-window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 50);
-
-    let current = '';
-    sections.forEach(section => {
-        if (window.scrollY >= section.offsetTop - 100) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navItems.forEach(item => {
-        item.classList.toggle('active', item.getAttribute('href') === '#' + current);
-    });
-});
-</script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
+
